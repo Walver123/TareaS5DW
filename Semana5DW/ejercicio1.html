@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1: IMC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FEEED4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #5E9CA0;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .exercise-content {
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"] {
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #CCC;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #5E9CA0;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4B8083;
+        }
+
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 1: IMC (Índice de Masa Corporal)</h1>
+
+    <div class="exercise-content">
+        <p>Ingrese su peso y altura para calcular el IMC:</p>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso">
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura">
+        <button onclick="calcularIMC()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="ejercicio1.js"></script>
+</body>
+</html>

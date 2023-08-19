@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Número de Caracteres</title>
+   
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #5E9CA0;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.char-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.char-content form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #5E9CA0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4B8083;
+}
+
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007f5f;
+}
+   </style>
+</head>
+<body>
+    <h1>Número de Caracteres</h1>
+
+    <div class="char-content">
+        <form id="char-form">
+            <label for="texto">Ingrese un texto:</label>
+            <input type="text" id="texto" required>
+            <label for="caracter">Ingrese un carácter:</label>
+            <input type="text" id="caracter" maxlength="1" required>
+            <button type="submit">Contar Carácter</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="ejercicio6.js"></script>
+</body>
+</html>
